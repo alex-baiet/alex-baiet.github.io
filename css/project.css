@@ -1,0 +1,34 @@
+article > h2 {
+  position: absolute;
+}
+
+p, video {
+  position: absolute;
+  width: 46%;
+  margin: 2%;
+
+  top:50%;
+  transform: translateY(-50%);
+
+}
+
+video, .no-video {
+  margin-right: 2%;
+  right: 0;
+}
+
+.info, .no-video {
+  margin: 1%;
+  padding: 20px 1%;
+}
+
+.dark-bg {
+  background-color: #000a;
+}
+
+.tankulator_py { background-image: url(../img/tankulator_py.png); }
+.tankulator_unity { background-image: url(../img/tankulator_unity.png); }
+.lightball { background-image: url(../img/lightball.png); }
+.pymagicmaze { background-image: url(../img/pymagicmaze.png); }
+.slay_the_spire { background-image: url(../img/slay_the_spire.png); }
+.hiraizumi_web { background-image: url(../img/hiraizumi_web.png); }

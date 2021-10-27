@@ -1,0 +1,153 @@
+section {
+  /* margin: 20px; */
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/*Introduction*/
+.intro {
+  border-right-style: solid; 
+  border-right-width: 1px; 
+
+  width: 25%;
+  height: 100%;
+}
+
+.intro > h1 {
+  position: relative;
+  padding: 100px 0 0 20px;
+  margin: 0;
+  font-size: 24pt;
+}
+
+.intro > hr {
+  border-style: none;
+}
+
+h1 > b {
+  font-size: 28pt;
+}
+
+/*Menu principal*/
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 25%;
+  margin: 20px;
+  width: 75%;
+  align-content: center; 
+  transform: translateY(-50%);
+
+}
+
+.choice {
+  position: relative;
+  height: 100px;
+}
+
+.choice *, .choice {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-property: all; 
+}
+
+.choice > .content, .choice > .hidden_content {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 30pt;
+  text-decoration: none;
+}
+
+.choice > .hidden_content {
+  font-size: 20pt;
+  opacity: 0;
+}
+
+.choice > .background {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #ffffff00;
+
+}
+
+.choice:hover {
+  height: 140px;
+}
+
+.choice:hover > .background {
+  height: 80%;
+  top: 10%;
+  background-color: #ffffff30;
+}
+
+.choice:hover > .content {
+  font-size: 46pt;
+}
+
+.contact:hover .content {
+  left: 33%;
+}
+
+.contact:hover .hidden_content {
+  left: 66%;
+  font-size: 26pt;
+  opacity: 1;
+}
+
+.menu > hr {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (orientation: portrait) {
+  .intro {
+    width: 100%;
+    height: 33%;
+    border-right-style: none;
+  }
+
+  .intro > hr {
+    border-style: solid;
+  }
+
+  .intro > h1 {
+    padding: 0;
+  }
+
+  .menu {
+    width: 100%;
+    top: 33%;
+    left: 0;
+    transform: translateY(0);
+    margin: 0;
+  }
+
+
+  .contact:hover .content {
+    left: 25%;
+  }
+
+  .contact:hover .hidden_content {
+    left: 75%;
+    font-size: 26pt;
+    opacity: 1;
+  }
+
+}

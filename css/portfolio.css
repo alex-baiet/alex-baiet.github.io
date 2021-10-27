@@ -1,0 +1,63 @@
+/* Valeurs globals de la parte présentation */
+.pres_part {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  /*border-style: solid;
+  border-width: 1px;*/
+}
+
+.pres_part p, ul, table {
+  margin: 50px; 
+}
+
+/* Présentation 1ère partie */
+.pres_part table { width: 100%; }
+.pres_cat { text-align: right; }
+.pres_answer { text-align: left; }
+
+.pres_part table + p { 
+  position: absolute;
+  top: 50%;
+}
+
+/* Présentation 2nd partie */
+.pres_part + .pres_part {
+  right: 0;
+  border-left-style: solid;
+  border-width: 1px;
+}
+
+.pres_part ul {
+  padding: 0;
+}
+
+.pres_part li {
+  /* Ancienne mis en forme 
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: #ffffff40;
+  margin: 16px 0;
+  padding: 8px; */
+  
+  text-align: center;
+  list-style-type: none;
+}
+
+.competences .pres_part {
+  height: auto;
+}
+
+.competences h4 {
+  margin: 10px 0 10px 0;
+}
+
+.competences h2, .competences h3 {
+  margin: 30px 0 10px 0;
+}
+
+.competences ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
