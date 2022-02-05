@@ -40,7 +40,12 @@ nav:hover .nav_name {
   opacity: 0%;
 }
 
-nav > * {
+#nav_links {
+  display: flex;
+  flex-direction: column;
+}
+
+nav > *, #nav_links > a {
   margin-right: 50px;
   text-align: right; 
 }
@@ -49,7 +54,7 @@ nav > h1 {
   color: #aaffaa;
 }
 
-nav > a {
+#nav_links > a {
   margin-top: 6px;
   padding: 8px 20px;
 
@@ -64,7 +69,7 @@ nav > a {
   transition-duration: 0.5s;
 }
 
-nav > a:hover {
+#nav_links > a:hover {
   transform: translate(0px, 0);
   background-color: #aaffaa;
   color: black;
