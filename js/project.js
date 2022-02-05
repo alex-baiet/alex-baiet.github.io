@@ -26,4 +26,11 @@ function printProject(
     "<h2>"+title+"</h2>"+
     "<p class='info dark-bg'>"+text+"</p>"+
     (videoText == null ? "<video src='"+videoLink+"' controls></video>" : "<p class='no-video dark-bg'>"+videoText+"</p>");
+
+  // Ajout d'un raccourci dans la barre de navigation
+  let navParent = document.getElementById("nav_links");
+  let a = document.createElement("a");
+  a.href = `#${classname}`;
+  a.innerHTML = title;
+  navParent.appendChild(a);
 }
