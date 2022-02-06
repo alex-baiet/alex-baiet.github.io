@@ -1,3 +1,6 @@
+/** Permet de désactiver le script. */
+const active = false;
+
 document.body.innerHTML += "<div class='no_scroll' id='bg-area'><div id='bg-anim'></div></div>";
 var bg = document.getElementById("bg-anim");
 var numSquare = 0;
@@ -69,7 +72,7 @@ function updateShape() {
     lastUpdate = Date.now();
 }
 
-setInterval(bgManager, 2000);
-requestAnimationFrame(updateShape);
-
-console.log("script deco.js chargé.");
+if (active) {
+    setInterval(bgManager, 2000);
+    requestAnimationFrame(updateShape);
+}
