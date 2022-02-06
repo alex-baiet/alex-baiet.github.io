@@ -22,10 +22,12 @@ function printProject(
   // Remplissage du contenu de l'article
   article.classList.add(classname);
   article.id = classname;
+  article.style.backgroundImage = `url(img/${classname}.png)`;
   article.innerHTML =
-    "<h2>"+title+"</h2>"+
-    "<p class='info dark-bg'>"+text+"</p>"+
-    (videoText == null ? "<video src='"+videoLink+"' controls></video>" : "<p class='no-video dark-bg'>"+videoText+"</p>");
+    `<div class="article-bg"></div>
+    <h2>${title}</h2>
+    <p class='info dark-bg'>${text}</p>` +
+    (videoText == null ? `<video src='${videoLink}' controls></video>` : `<p class='no-video dark-bg'>${videoText}</p>`);
 
   // Ajout d'un raccourci dans la barre de navigation
   let navParent = document.getElementById("nav_links");
