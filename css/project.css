@@ -32,3 +32,7 @@ video, .no-video {
 .dark-bg {
   background-color: #000a;
 }
+
+.video-project {
+  max-height: 70vh;
+}
