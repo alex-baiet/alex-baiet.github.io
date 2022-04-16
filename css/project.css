@@ -29,6 +29,10 @@ video, .no-video {
   padding: 20px 1%;
 }
 
+.no-video {
+  text-align: center;
+}
+
 .dark-bg {
   background-color: #000a;
 }
