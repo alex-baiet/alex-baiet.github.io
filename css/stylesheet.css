@@ -52,3 +52,7 @@ b {
   height: 100px;
   border-radius: 10px;
 }
+
+.transparent {
+  opacity: 0.5;
+}
